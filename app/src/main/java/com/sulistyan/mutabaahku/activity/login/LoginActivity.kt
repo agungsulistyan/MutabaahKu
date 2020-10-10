@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.sulistyan.mutabaahku.MainActivity
 import com.sulistyan.mutabaahku.R
+import com.sulistyan.mutabaahku.activity.register.RegisterActivity
 import com.sulistyan.mutabaahku.base.BaseActivity
 import com.sulistyan.mutabaahku.model.User
 import kotlinx.android.synthetic.main.activity_login.*
@@ -35,7 +36,7 @@ class LoginActivity : AppCompatActivity(), LoginView {
             LoginPresenter(this@LoginActivity).login(user)
         }
         goRegister.onClick {
-            //startActivity<RegisterActivity>()
+            startActivity<RegisterActivity>()
         }
     }
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/far">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_store"
+        android:background="@drawable/background_light"
+        android:layout_above="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/normal"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:textSize="@dimen/far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CatatanQue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/high"
+        android:layout_above="@id/etRegisterUsername"/>
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:hint="username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_light"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/etRegisterNama"
+        android:hint="nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterUsername"
+        android:layout_marginTop="@dimen/normal"
+        android:background="@drawable/background_light"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_light"
+        android:layout_marginTop="@dimen/normal"
+        android:layout_below="@id/etRegisterNama"/>
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_alignEnd="@id/etRegisterPassword"
+        android:background="@drawable/background_dark"
+        android:layout_marginTop="@dimen/normal"
+        android:text="Daftar"
+        android:textColor="@color/colorFree" />
+
+    <TextView
+        android:id="@+id/goLogin"
+        android:hint="Sudah punya akun?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegisterPassword"
+        android:padding="@dimen/normal"
+        android:layout_alignBaseline="@id/btRegister"/>
+
+</RelativeLayout>
