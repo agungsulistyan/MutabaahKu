@@ -13,9 +13,9 @@
         android:textAlignment="center"
         android:text="Your Name"
         android:textSize="32sp"
-        android:layout_above="@id/report"
+        android:layout_marginTop="@dimen/high"
         android:fontFamily="sans-serif-light"/>
-
+    <!--
     <LinearLayout
         android:id="@+id/report"
         android:layout_marginTop="@dimen/high"
@@ -123,7 +123,8 @@
 
 
     </LinearLayout>
-    <!--
+    -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mainMenu"
         android:layout_width="wrap_content"
@@ -131,8 +132,8 @@
         android:padding="@dimen/high"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="3"
-        android:layout_below="@id/report"
+        android:layout_below="@id/tvWelcome"
         tools:listitem="@layout/item_menu"
         android:layout_centerHorizontal="true"/>
-    -->
+
 </RelativeLayout>

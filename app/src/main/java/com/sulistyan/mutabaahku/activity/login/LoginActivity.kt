@@ -17,13 +17,6 @@ class LoginActivity : AppCompatActivity(), LoginView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-            // Untuk login otomatis
-            // val user = User()
-            // user.idUser = 0
-            // user.username = "guest"
-            // user.email = "guest@rizal.com"
-            // user.hp = "90123912893323"
-            // startActivity<MainActivity>(BaseActivity.TAGS.USER to user)
         initActionButton()
     }
 

@@ -13,6 +13,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity" />
+        <activity android:name=".activity.mutabaah_tilawah.MutabaahTilawahActivity" />
+        <activity android:name=".activity.mutabaah_tilawah._add.AddMutabaahTilawahActivity" />
         <activity android:name=".activity.register.RegisterActivity" />
         <activity android:name=".activity.login.LoginActivity">
             <intent-filter>
